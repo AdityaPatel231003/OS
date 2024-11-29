@@ -1,6 +1,7 @@
 # OS
 Learning in OS during 5th Semester
-#Round Robin is a CPU scheduling algorithm where each process is cyclically assigned a fixed time slot. 
+
+#Round Robin =>is a CPU scheduling algorithm where each process is cyclically assigned a fixed time slot. 
 CHARACTERISTICS :-  * It is simple, easy to implement, and starvation-free as all processes get a fair share of CPU.
                     * One of the most commonly used techniques in CPU scheduling is a core.
                     * It is preemptive as processes are assigned CPU only for a fixed slice of time at most.
