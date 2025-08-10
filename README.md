@@ -19,3 +19,29 @@ DISADVANTAGE :-   * There is Larger waiting time and Response time.
                   * There is Context Switches.
                   * Gantt chart seems to come too big (if quantum time is less for scheduling. For Example:1 ms for big scheduling.)
                   * Time consuming scheduling for small quantum.
+
+Algorithm Steps:
+Input:
+Get the number of processes, their burst times (time required for execution), and the time quantum.
+
+Initialization:
+Create a copy of the burst times to track remaining burst times for each process. Initialize arrays for waiting time and turnaround time to zero.
+
+Simulation Loop:
+Iterate through the processes in a circular manner until all processes are completed.
+
+For each process:
+If the remaining burst time is greater than the time quantum:
+Decrement the remaining burst time by the quantum.
+Add the quantum to the current time.
+Else (remaining burst time is less than or equal to the quantum):
+Add the remaining burst time to the current time.
+Set the remaining burst time to zero (process completed).
+Calculate the waiting time for the process: waiting_time = current_time - original_burst_time.
+Calculate the turnaround time: turnaround_time = waiting_time + original_burst_time.
+
+Calculate Averages:
+Sum up all waiting times and turnaround times, then divide by the total number of processes to get the average waiting time and average turnaround time.
+
+Output:
+Print the burst time, waiting time, and turnaround time for each process, along with the average waiting time and average turnaround time.
