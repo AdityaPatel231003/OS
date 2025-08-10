@@ -20,7 +20,7 @@ DISADVANTAGE :-   * There is Larger waiting time and Response time.
                   * Gantt chart seems to come too big (if quantum time is less for scheduling. For Example:1 ms for big scheduling.)
                   * Time consuming scheduling for small quantum.
 
-Algorithm Steps:
+Algorithm Steps:-
 Input:
 Get the number of processes, their burst times (time required for execution), and the time quantum.
 
